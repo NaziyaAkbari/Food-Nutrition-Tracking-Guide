@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 60px;
+    background:rgba(0,0,0,0.7);
+    position:fixed;
+    width:100%;
+    z-index:1000;
+    animation: slideDown 1s ease-in-out;
+}
+
+.navbar a{
+    color:white;
+    margin-left:25px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    color:#00ffcc;
+}
+
+.logo{
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+}
+
+/* Hero Section with Online Background Slider */
+.hero{
+    height:100vh;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    animation: backgroundSlider 18s infinite;
+}
+
+/* ONLINE FOOD IMAGES */
+@keyframes backgroundSlider{
+    0%{
+        background:url('https://images.unsplash.com/photo-1490645935967-10de6ba17061') no-repeat center center/cover;
+    }
+    33%{
+        background:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') no-repeat center center/cover;
+    }
+    66%{
+        background:url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c') no-repeat center center/cover;
+    }
+    100%{
+        background:url('https://images.unsplash.com/photo-1490645935967-10de6ba17061') no-repeat center center/cover;
+    }
+}
+
+/* Overlay */
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+}
+
+/* Hero Content */
+.hero-content{
+    position:relative;
+    z-index:2;
+    background:rgba(255,255,255,0.1);
+    padding:50px;
+    border-radius:20px;
+    backdrop-filter:blur(12px);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.animate-text{
+    font-size:42px;
+    animation: floatText 3s ease-in-out infinite alternate;
+}
+
+.fade-text{
+    margin-top:15px;
+    font-size:18px;
+}
+
+/* Button */
+.btn-primary{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 30px;
+    background:#28a745;
+    color:white;
+    border-radius:30px;
+    text-decoration:none;
+    transition:0.4s;
+}
+
+.btn-primary:hover{
+    background:#1e7e34;
+    transform:scale(1.1);
+}
+
+/* About */
+.about{
+    padding:100px 20px;
+    text-align:center;
+    background:#f8f9fa;
+}
+
+/* Features */
+.features{
+    padding:100px 20px;
+    text-align:center;
+    background:#ffffff;
+}
+
+.feature-box{
+    background:#f1f1f1;
+    padding:30px;
+    margin:20px auto;
+    width:60%;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.feature-box:hover{
+    transform:translateY(-10px);
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:black;
+    color:white;
+}
+
+/* Animations */
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes slideDown{
+    from{transform:translateY(-100px);}
+    to{transform:translateY(0);}
+}
+
+@keyframes floatText{
+    from{transform:translateY(-10px);}
+    to{transform:translateY(10px);}
+}
