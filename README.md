@@ -4,7 +4,7 @@ This project focuses on promoting healthy lifestyle habits by giving users a cle
 The application is user-friendly, responsive, and built with a modern animated interface to enhance user experience.
 
 
-**Features:**
+## Features:
 User authentication system (Login & Logout)
 Add food details (Food Name, Calories, Protein, Carbs, Fats)
 Delete food records
@@ -32,5 +32,5 @@ MySQL
 Server Environment:
 XAMPP
 
-**Author Name:**
-Naziya Akbari
+## Author Name: Naziya Akbari
+
